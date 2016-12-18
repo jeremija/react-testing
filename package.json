@@ -5,7 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "test": "jest",
-    "lint": "eslint",
+    "lint": "eslint src/*",
     "peers": "npm install react@^15.4.1 react-dom@^15.4.1 react-addons-test-utils@^15.4.1 react-test-renderer@^15.4.1"
   },
   "repository": {
