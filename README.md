@@ -1,5 +1,7 @@
 # react-testing
 
+[![Build Status](https://travis-ci.org/jeremija/react-testing.svg?branch=master)][1]
+
 Reduces the boilerplate when testing react components.
 
 # Usage
@@ -36,6 +38,7 @@ describe('MyComponent', () => {
 ```
 
 # License
-[ISC][1]
+[ISC][2]
 
-[1]: https://opensource.org/licenses/ISC
+[1]: https://travis-ci.org/jeremija/react-testing
+[2]: https://opensource.org/licenses/ISC
