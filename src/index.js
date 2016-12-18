@@ -3,7 +3,7 @@ const ReactDOM = require('react-dom');
 const TestUtils = require('react-addons-test-utils');
 const TestRenderer = require('react-test-renderer');
 
-function pureRender() {
+function renderPure() {
   return TestRenderer.create.apply(TestRenderer, arguments);
 }
 
@@ -18,6 +18,6 @@ module.exports = {
   ReactDOM,
   TestUtils,
   TestRenderer,
-  pureRender,
+  renderPure,
   render
 };

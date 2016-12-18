@@ -36,16 +36,16 @@ describe('index', () => {
           <Component className="my-class">test</Component>
         );
         expect(obj.component.props.className).toBe('my-class');
-        expect(obj.node).toBeTruthy();
+        expect(obj.node.textContent).toBe('test');
       });
 
     });
 
-    describe('pureRender', () => {
+    describe('renderPure', () => {
 
       it('renders a component using test renderer', () => {
         const React = index.React;
-        const obj = index.pureRender(
+        const obj = index.renderPure(
           <Component className="my-class">test</Component>
         );
         expect(obj.toJSON()).toEqual({
