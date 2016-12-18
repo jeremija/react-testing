@@ -49,11 +49,11 @@ describe('index', () => {
           <Component className="my-class">test</Component>
         );
         expect(obj.toJSON()).toEqual({
-          "children": ["test"],
-          "props": {
-            "className": "my-class"
+          children: ['test'],
+          props: {
+            className: 'my-class'
           },
-          "type": "div"
+          type: 'div'
         });
       });
 
