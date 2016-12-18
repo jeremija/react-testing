@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/jeremija/react-testing.svg?branch=master)][1]
 
-Reduces the boilerplate when testing react components.
+Reduces boilerplate code when testing React components.
 
 # Usage
 
