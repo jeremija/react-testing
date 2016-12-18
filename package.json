@@ -1,0 +1,27 @@
+{
+  "name": "react-testing",
+  "version": "1.0.0",
+  "description": "Utility functions that make setting up of an environment for testing react easier",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeremija/react-testing.git"
+  },
+  "keywords": [
+    "react",
+    "test",
+    "testing",
+    "wrapper",
+    "import",
+    "helper"
+  ],
+  "author": "Jerko Steiner",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeremija/react-testing/issues"
+  },
+  "homepage": "https://github.com/jeremija/react-testing#readme"
+}
