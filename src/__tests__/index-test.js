@@ -1,22 +1,18 @@
-const index = require('../index.js');
+const { React, render, renderPure } = require('../index.js');
 
 describe('index', () => {
 
   it('exports react, react-dom and test-utils', () => {
-    const React = require('react');
-    const ReactDOM = require('react-dom');
-    const TestUtils = require('react-addons-test-utils');
-    const TestRenderer = require('react-test-renderer');
-    expect(index.React).toBe(React);
-    expect(index.ReactDOM).toBe(ReactDOM);
-    expect(index.TestUtils).toBe(TestUtils);
-    expect(index.TestRenderer).toBe(TestRenderer);
+    expect(React).toBe(require('react'));
+    const index = require('../index.js');
+    expect(index.ReactDOM).toBe(require('react-dom'));
+    expect(index.TestUtils).toBe(require('react-addons-test-utils'));
+    expect(index.TestRenderer).toBe(require('react-test-renderer'));
   });
 
   describe('rendering', () => {
     let Component;
     beforeEach(() => {
-      const React = index.React;
       Component = React.createClass({
         render() {
           return (
@@ -31,12 +27,11 @@ describe('index', () => {
     describe('render', () => {
 
       it('renders a component def and exports the component and node', () => {
-        const React = index.React;
-        const obj = index.render(
+        const { component, node } = render(
           <Component className="my-class">test</Component>
         );
-        expect(obj.component.props.className).toBe('my-class');
-        expect(obj.node.textContent).toBe('test');
+        expect(component.props.className).toBe('my-class');
+        expect(node.textContent).toBe('test');
       });
 
     });
@@ -44,8 +39,7 @@ describe('index', () => {
     describe('renderPure', () => {
 
       it('renders a component using test renderer', () => {
-        const React = index.React;
-        const obj = index.renderPure(
+        const obj = renderPure(
           <Component className="my-class">test</Component>
         );
         expect(obj.toJSON()).toEqual({
