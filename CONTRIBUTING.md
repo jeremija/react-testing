@@ -1,7 +1,7 @@
 # Contributing
 
-Thank you for your interest to contribute to Peer Calls. By participating in
-this project, you agree to abide by the [code of conduct].
+Thank you for your interest to contribute. By participating in this project,
+you agree to abide by the [code of conduct].
 
   [code of conduct]: CODE_OF_CONDUCT.md
 
