@@ -16,8 +16,8 @@ describe('MyComponent', () => {
     const { component, node } = index.render(
       <MyComponent className="my-class">test</MyComponent>
     );
-    expect(obj.component.props.className).toBe('my-class');
-    expect(obj.node.textContent).toBe('test');
+    expect(component.props.className).toBe('my-class');
+    expect(node.textContent).toBe('test');
   });
 });
 ```
