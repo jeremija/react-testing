@@ -13,7 +13,7 @@ const { React, render } = require('react-testing');
 const MyComponent = require('../MyComponent.jsx');
 describe('MyComponent', () => {
   it('should render without problems', () => {
-    const { component, node } = index.render(
+    const { component, node } = render(
       <MyComponent className="my-class">test</MyComponent>
     );
     expect(component.props.className).toBe('my-class');
@@ -29,7 +29,7 @@ const { React, renderPure } = require('react-testing');
 const MyComponent = require('../MyComponent.jsx');
 describe('MyComponent', () => {
   it('should render without problems', () => {
-    const obj = index.renderPure(
+    const obj = renderPure(
       <MyComponent className="my-class">test</MyComponent>
     );
     expect(obj.toJSON().children).toEqual(['test']);
