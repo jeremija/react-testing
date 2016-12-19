@@ -25,7 +25,7 @@ describe('MyComponent', () => {
 Rendering using `react-test-renderer`:
 
 ```javascript
-const { React, pureRender } = require('react-testing');
+const { React, renderPure } = require('react-testing');
 const MyComponent = require('../MyComponent.jsx');
 describe('MyComponent', () => {
   it('should render without problems', () => {
